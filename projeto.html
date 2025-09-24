@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Núcleo Boitatá - Quem somos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="oProjeto">
+        <header class="cabecalho">
+            <div class="img_cabecalho">
+                <img src="img/logonome-removebg-preview.png" alt="Logo Núcleo Boitatá">
+            </div>
+
+            <div class="botoes_cabecalho">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Login.php">Registro</a>
+                        </li>
+                        <li>
+                            <a href="mapa.html">Mapas</a>
+                        </li>
+                        <li>
+                            <a href="projeto.html">O Projeto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="grid-container">
+            <!-- Painel Central -->
+            <div class="painel-central">
+                <h1 class="Titulo1">O QUE SOMOS</h1>
+                <p class="Text_proj">O projeto "Núcleo Boitatá" surge da necessidade de combater práticas insustentáveis no manejo do solo,
+                    como monoculturas, uso excessivo de agrotóxicos e plantios inadequados, que resultam em degradação ambiental 
+                    e riscos à sociedade. A ideia veio após um de nossos integrantes passar por uma inquietação quando em uma aula de artes
+                    o professor informou sobre o que é deserto verde, onde o mesmo integrante percebeu que existe uma
+                    quantidade de detalhes que não são explicados para as pessoas, falta de cuidados e práticas insustentáveis que não
+                    são tão falados e que pode trazer grandes problemas para a sociedade. 
+                </p>
+
+                <h1 class="solução">Nossa solução</h1>
+
+                <p class="respostadasolução">
+                    Inspirado pela figura protetora do Boitatá, o projeto propõe uma plataforma digital acessível que oferece 
+                    informações sobre tipos de solo e orientações para plantios
+                    sustentáveis, visando promover a conscientização e o uso responsável da terra, a partir
+                    da localização do usuário, mostra as características
+                    do solo e indica as árvores ideais
+                    para plantar, evitando os problemas ambientais.
+                </p>
+
+                <h1 class="destaques">
+                    DESTAQUES
+                </h1>
+
+                <div class="botoes-container">
+                    <button class="deserto" onclick="mostrarDestaque('deserto')" title="deserto verde" type="button">
+                        <p>Deserto verde</p>
+                        <img src="img/floresta verde.png" alt="deserto verde">
+                    </button>
+
+                    <button class="lei" onclick="mostrarDestaque('Lei')" title="Lei florestal">
+                        <p>Lei florestal</p>
+                        <img src="img/lei.png" alt="Lei florestal">
+                    </button>
+
+                    <button class="solos" onclick="mostrarDestaque('infertil')" title="solo infertil">
+                        <p>Solos inferteis</p>
+                        <img src="img/infertil.png" alt="solo infertil">
+                    </button>
+                </div>
+
+
+                <div id="conteudoDestaque" class="destaque">
+                    <h3>Clique sobre as imagens para mostrar os textos.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="rodape">
+      <p class="direitos">
+        &copy; 2025 Núcleo Boitatá |
+        <a href="politica-privacidade.html">Política de Privacidade</a>
+        |
+        <a href="termos-servico.html">Termos de Serviço</a>
+        |
+        <a href="https://www.instagram.com/nucleo_boitata?igsh=MTJlcmdZzMwMGhkOA==">Instagram</a>
+      </p>
+    </footer>
+    <script src="JavaScript/Destaque_projeto.js"></script>
+</body>
+
+</html>
