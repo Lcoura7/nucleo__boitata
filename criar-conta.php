@@ -39,12 +39,7 @@
     </header>
 
     <div class="criar-conta-container">
-      <!-- Partículas decorativas -->
-      <div class="particle-criar" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
-      <div class="particle-criar" style="top: 70%; left: 85%; animation-delay: 3s;"></div>
-      <div class="particle-criar" style="top: 25%; left: 80%; animation-delay: 6s;"></div>
-      <div class="particle-criar" style="top: 85%; left: 15%; animation-delay: 2s;"></div>
-      <div class="particle-criar" style="top: 10%; left: 70%; animation-delay: 4s;"></div>
+   
 
       <div class="criar-conta-card">
         <h1 class="criar-conta-title">CRIAR CONTA</h1>
@@ -55,7 +50,7 @@
         <form action="php/conexao_cadastro.php" method="post" id="criarContaForm">
           <div class="form-group-criar">
             <input 
-              type="text"  
+              type="email"  
               name="username" 
               required 
               class="form-input-criar"
@@ -63,9 +58,9 @@
               id="usernameInput"
               autocomplete="username"
               minlength="3"
-              maxlength="20"
+              maxlength="60"
             />
-            <label class="form-label-criar" for="usernameInput">Nome de Usuário</label>
+            <label class="form-label-criar" for="usernameInput">E-mail</label>
             <div class="validation-message" id="usernameValidation"></div>
           </div>
 

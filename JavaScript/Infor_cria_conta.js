@@ -9,21 +9,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const strengthFill = document.getElementById('strengthFill');
     const strengthText = document.getElementById('strengthText');
 
-    // Validação em tempo real do nome de usuário
+    // Validação em tempo real do e-mail
     usernameInput.addEventListener('input', function () {
-        const username = this.value;
+        const email = this.value;
         const validation = document.getElementById('usernameValidation');
 
-        if (username.length < 3) {
-            showValidation('usernameValidation', 'Nome de usuário deve ter pelo menos 3 caracteres', 'error');
+        // Regex para validar formato de e-mail básico
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email.length === 0) {
+            showValidation('usernameValidation', '', 'neutral');
+            this.classList.remove('invalid', 'valid');
+        } else if (!emailRegex.test(email)) {
+            showValidation('usernameValidation', 'Digite um e-mail válido (exemplo@dominio.com)', 'error');
             this.classList.add('invalid');
             this.classList.remove('valid');
-        } else if (!/^[a-zA-Z0-9_]+$/.test(username)) {
-            showValidation('usernameValidation', 'Use apenas letras, números e underscore', 'error');
+        } else if (email.length < 5) {
+            showValidation('usernameValidation', 'O e-mail deve ter pelo menos 5 caracteres', 'error');
             this.classList.add('invalid');
             this.classList.remove('valid');
         } else {
-            showValidation('usernameValidation', 'Nome de usuário válido!', 'success');
+            showValidation('usernameValidation', 'E-mail válido!', 'success');
             this.classList.add('valid');
             this.classList.remove('invalid');
         }

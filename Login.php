@@ -24,8 +24,7 @@
             ? 'Cadastro realizado com sucesso!'
             : 'Erro: ' . htmlspecialchars($_GET['message'] ?? 'Usuario ou senha incorretos');
 
-        echo '<div class="alert ' . $alertClass . ' text-center">' . $message . '</div>';
-    }
+        echo '<div class="alert ' . $alertClass . ' text-center">' . $message . '</div>';}
     ?>
 
     <header class="cabecalho">
@@ -54,12 +53,6 @@
     </header>
 
     <div class="login-container">
-        <!-- Partículas decorativas -->
-        <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
-        <div class="particle" style="top: 60%; left: 85%; animation-delay: 2s;"></div>
-        <div class="particle" style="top: 30%; left: 75%; animation-delay: 4s;"></div>
-        <div class="particle" style="top: 80%; left: 20%; animation-delay: 1s;"></div>
-        <div class="particle" style="top: 15%; left: 60%; animation-delay: 3s;"></div>
 
         <div class="login-card">
             <h1 class="login-title">Bem-vindo</h1>
@@ -68,13 +61,13 @@
             <form method="post" action="php/conexao_login.php">
                 <div class="form-group">
                     <input
-                        type="text"
+                        type="email"
                         name="username"
                         required
                         class="form-input"
                         placeholder=" "
                         autocomplete="username">
-                    <label class="form-label">Usuário</label>
+                    <label class="form-label">E-mail</label>
                 </div>
 
                 <div class="form-group">
