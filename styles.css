@@ -3,6 +3,10 @@
   font-family: [tribo];
   src: url(./font/TriboRegular.ttf);
 }
+@font-face {
+  font-family: [lalau];
+  src: url(font/MODERNA_.TTF);
+}
 
 
 
@@ -224,7 +228,7 @@ body {
 /* Ajuste de texto dos destaques */
 .Titulo1 {
   margin-top: 5%;
-  font-family:'tribo';
+  font-family:"lalau";
   font-size: 2rem;
   color: #333;
   width: 100%;
@@ -232,7 +236,7 @@ body {
 
 .solução {
   color: #902124;
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "lalau";
 }
 
 .Text_proj,
@@ -240,7 +244,7 @@ body {
   color: black;
   border-radius: 10px;
   font-size: 1.2rem;
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "lalau";
   padding: 15px;
   margin: 10px 0;
   line-height: 1.6;
@@ -255,7 +259,7 @@ body {
 .estilizar1,
 .estilizar2,
 .estilizar3 {
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "lalau";
 }
 
 #lei {
@@ -263,7 +267,7 @@ body {
 }
 
 .destaques {
-  font-family: "Rubik Dirt", system-ui;
+  font-family: "lalau";
   color: #902124;
   margin-top: 6vh;
 }
